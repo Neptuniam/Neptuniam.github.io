@@ -24,7 +24,7 @@
 
   <style media="screen">
     .jumbotronStyle {
-      background-image: url(img//backgrounds//Liam-Jones-Copy.jpg);
+      background-image: url(img//backgrounds//1000032737.jpg);
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
@@ -83,7 +83,7 @@
       color: rgb(72,72,72);
     }
 
-    #about p {
+    #about .col-sm-10 {
         margin-top: 50px;
     }
 
@@ -164,7 +164,10 @@
      .JobDate {
          position: absolute;
          top: 50px;
-         left: -200px;
+         left: -240px;
+
+        width: 220px;
+        text-align: end;
 
          /* font-size: 18px; */
          color: grey;
@@ -321,18 +324,28 @@
 
     <!--Avatar-->
     <div class="avatar">
-      <img src="img//backgrounds//avatar-Liam.jpeg" class="rounded-circle img-fluid" alt="My Avatar">
+      <img src="img//backgrounds//1000038793.jpg" class="rounded-circle img-fluid" alt="My Avatar">
     </div>
 
     <!--Content-->
     <div class="row">
       <div class="col-sm-1"></div>
-      <p class="col-sm-10">
-        Hi! I'm Liam, a member of the Univeristy of Guelph alumni and a passionate web developer.<br>
-        Over the last few years I have spent many hours expanding on my knowledge and skills as a programmer which is showcased down in the <a href="#projects"><i>Projects</i></a> section.
-        Professionally, my focus has been on web development, specializing in VueJS. My work has also allowed me to work with frameworks such as Laravel and Flutter.
-        When I'm not taking on exciting new programming projects, I enjoy playing video games, following ARGs, hitting the gym, and spending time with friends and family.
-      </p>
+      <div class="col-sm-10">
+        <p>
+          Hi! I'm Liam, a member of the Univeristy of Guelph alumni and a passionate web developer.<br>
+        </p>
+
+        <div style="margin: 10px 0px">
+          <p>
+            Over the years I have spent many hours expanding on my knowledge and skills as a programmer which is showcased down in the <a href="#projects"><i>Projects</i></a> section.
+            My main focus has been on web development specializing in VueJS while also gaining extensive experience with frameworks such as Laravel and Flutter.  
+          </p>
+        </div>
+
+        <p>
+          When I'm not taking on exciting new programming projects, I enjoy playing video games, following ARGs and various motorsports, hitting the gym, collecting watches, and aiding in training my dog Harvard in competetive scent detection.
+        </p>
+      </div>
       <div class="col-sm-1"></div>
     </div>
 
@@ -348,9 +361,41 @@
     <br>
 
     <div class="timeline">
+          <div class="vl">
+            <div class="JobDate">
+                March 2023 - Ongoing.
+            </div>
+
+            <span class="dot"></span>
+
+            <div class="card">
+              <div class="row">
+                  <img class="col-sm-4 nopadding" src="img//jobs//iws.jpg" alt="IWS" style="object-fit: cover">
+
+                  <div class="col-sm-8 text-left workDesc">
+                      <a class="jobEmployer" href="https://www.intelligentwellheadsystems.com" target="_blank">
+                        Intelligent Wellhead Systems.
+                      </a>
+                      <div class="jobTitle">
+                        Senior Front-end developer (VueJS + Laravel)
+                      </div>
+
+                      <hr>
+
+                      <p>
+                        Responsible for the primary web application (both building new and improving existing features). <br>
+                        Creating component libraries for developing consistent UIs easier and faster. <br>
+                        Optimization practices to improve site reliability and performance. <br>
+                        Mentoring Junior developers.
+                      </p>
+                  </div>
+              </div>
+            </div>
+        </div>
+    
         <div class="vl">
             <div class="JobDate">
-                Aug 2021 - Ongoing.
+                August 2021 - December 2022.
             </div>
 
             <span class="dot"></span>
@@ -381,7 +426,7 @@
 
         <div class="vl">
             <div class="JobDate">
-                May 2020 - Ongoing
+                May 2020 - March 2023
             </div>
 
             <span class="dot"></span>
@@ -426,7 +471,7 @@
 
                     <div class="col-sm-8 text-left workDesc">
                         <a class="jobEmployer" href="https://www.nobal.ca/" target="_blank">
-                            Nobal Technologies. (Part-Time)
+                            Nobal Technologies. (Consultant)
                         </a>
                         <div class="jobTitle">
                             Full Stack Web Developer (VueJS / Laravel)
@@ -723,7 +768,7 @@
 
     function setQuality() {
       var typed = new Typed('#quoteBoard', {
-        strings: ['funny.', 'educated.', 'motivated.', 'adaptable.', 'ambitious.', 'considerate.', 'patient.', 'creative.', 'dedicated.', 'loyal.', 'Liam.'],
+        strings: ['dedicated.', 'motivated.', 'creative.', 'patient.', 'educated.', 'adaptable.', 'ambitious.', 'considerate.', 'loyal.', 'funny.', 'Liam.'],
         typeSpeed: 75,
         backSpeed: 50,
         backDelay: 2000
