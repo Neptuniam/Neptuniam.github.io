@@ -57,6 +57,10 @@
     section {
       padding: 6em 2em;
     }
+    section>div {
+      max-width: 2000px;
+      margin: auto;
+    }
 
     .row {
       margin: 0;
@@ -81,7 +85,8 @@
       font-size: 2rem;
     }
 
-    section p {
+    section p,
+    section div.body-text {
       font-family: "Roboto Condensed";
       font-size: 1.5rem;
       color: rgb(72,72,72);
@@ -269,6 +274,10 @@
         left: 10px;
      }
 
+     .JobDate-mobile {
+      display: hidden;
+     }
+
      /* Mobile specific classes */
      @media screen and (max-width: 480px) {
       .timeline {
@@ -285,6 +294,10 @@
       }
       .JobDate {
         display: none;
+      }
+      .JobDate-mobile {
+        margin-top: 5px;
+        display: block;
       }
 
       .vl .card {
@@ -308,6 +321,24 @@
 
 
       .AofFLeft, .AofFRight { text-align: center; }
+
+      #projects .col-lg-5,
+      #projects .col-lg-7 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+
+      section div.body-text {
+        font-size: 16px;
+      }
+
+      #projects .projectDate {
+        left: 0px;
+        bottom: 35px;
+      }
+      #projects .btn.btn-md {
+        margin-bottom: 10px;
+      }
     }
 
     .noselect {
@@ -360,428 +391,460 @@
 
   <!-- About Me Section -->
   <section class="text-center wow fadeInUp" data-wow-delay="0.2s" id="about">
-    <!-- About Me title -->
-    <h2 class="sectionTitle">About Me</h2>
+    <div>
+      <!-- About Me title -->
+      <h2 class="sectionTitle">About Me</h2>
 
-    <!--Avatar-->
-    <div class="avatar">
-      <img src="img//backgrounds//1000038793.jpg" class="rounded-circle img-fluid" alt="My Avatar">
-    </div>
+      <!--Avatar-->
+      <div class="avatar">
+        <img src="img//backgrounds//1000038793.jpg" class="rounded-circle img-fluid" alt="My Avatar">
+      </div>
 
-    <!--Content-->
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-        <p>
-          Hi! I'm Liam, a member of the Univeristy of Guelph alumni and a passionate web developer.<br>
-        </p>
-
-        <div style="margin: 10px 0px">
+      <!--Content-->
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
           <p>
-            Over the years I have spent many hours expanding on my knowledge and skills as a programmer which is showcased down in the <a href="#projects"><i>Projects</i></a> section.
-            My main focus has been on web development specializing in VueJS while also gaining extensive experience with frameworks such as Laravel and Flutter.  
+            Hi! I'm Liam, a member of the Univeristy of Guelph alumni and a passionate web developer.<br>
+          </p>
+
+          <div style="margin: 10px 0px">
+            <p>
+              Over the years I have spent many hours expanding on my knowledge and skills as a programmer which is showcased down in the <a href="#projects"><i>Projects</i></a> section.
+              My main focus has been on web development specializing in VueJS while also gaining extensive experience with frameworks such as Laravel and Flutter.  
+            </p>
+          </div>
+
+          <p>
+            When I'm not taking on exciting new programming projects I enjoy playing video games, following ARGs and various motorsports, hitting the gym, 
+            collecting watches, and aiding in training my dog Harvard in competitive scent detection.
           </p>
         </div>
-
-        <p>
-          When I'm not taking on exciting new programming projects I enjoy playing video games, following ARGs and various motorsports, hitting the gym, 
-          collecting watches, and aiding in training my dog Harvard in competitive scent detection.
-        </p>
+        <div class="col-sm-1"></div>
       </div>
-      <div class="col-sm-1"></div>
-    </div>
 
-    <h5 id="age" style="font-size: 2.75rem;">
-        Liam Andrew Jones,
-    </h5>
-    <h5>Calgary, Alberta</h5>
+      <h5 id="age" style="font-size: 2.75rem;">
+          Liam Andrew Jones,
+      </h5>
+      <h5>Calgary, Alberta</h5>
+    </div>
   </section>
 
   <!-- Work Experience Section -->
   <section class="text-center wow fadeInUp" data-wow-delay="0.2s" id="workExperience">
-    <h2 class="sectionTitle">Work Experience</h2>
-    <br>
+    <div>
+      <h2 class="sectionTitle">Work Experience</h2>
+      <br>
 
-    <div class="timeline">
+      <div class="timeline">
+            <div class="vl">
+              <div class="JobDate">
+                  March 2023 - Ongoing.
+              </div>
+
+              <span class="dot"></span>
+
+              <div class="card">
+                <div class="row">
+                    <img class="col-sm-4 nopadding" src="img//jobs//iws.jpg" alt="IWS" style="object-fit: cover">
+
+                    <div class="col-sm-8 text-left workDesc">
+                        <a class="jobEmployer" href="https://www.intelligentwellheadsystems.com" target="_blank">
+                          Intelligent Wellhead Systems.
+                        </a>
+                        <div class="jobTitle">
+                          Senior Front-end developer (VueJS + Laravel)
+                        </div>
+
+                        <div class="JobDate-mobile">
+                          March 2023 - Ongoing.
+                        </div>
+
+                        <hr>
+
+                        <p>
+                          Responsible for the primary web application (both building new and improving existing features). <br>
+                          Creating component libraries for developing consistent UIs easier and faster. <br>
+                          Optimization practices to improve site reliability and performance. <br>
+                          Mentoring Junior developers.
+                        </p>
+                    </div>
+                </div>
+              </div>
+          </div>
+      
+          <div class="vl">
+              <div class="JobDate">
+                  August 2021 - December 2022.
+              </div>
+
+              <span class="dot"></span>
+
+              <div class="card">
+                <div class="row">
+                    <img class="col-sm-4 nopadding" src="img//jobs//yoreferee.PNG" alt="Yoreferee" style="object-fit: cover">
+
+                    <div class="col-sm-8 text-left workDesc">
+                        <a class="jobEmployer" href="https://axethrowing.org/watl" target="_blank">
+                            Yoreferee.
+                        </a>
+                        <div class="jobTitle">
+                            Front end developer (VueJS + Firebase)
+                        </div>
+                        <div class="JobDate-mobile">
+                          August 2021 - December 2022.
+                      </div>
+
+                        <hr>
+
+                        <p>
+                            I have taken on a contract with Yoreferee in order to expand on their web applications and resolve a wide 
+                            range of bugs. While I have primarily focused on frontend using VueJS, this has also given me a chance to 
+                            explore Firebase.
+                        </p>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="vl">
+              <div class="JobDate">
+                  May 2020 - March 2023
+              </div>
+
+              <span class="dot"></span>
+
+              <div class="card">
+                  <div class="row">
+                      <img class="col-sm-4 nopadding" src="img//jobs//snappy.PNG" alt="Snappy Innovations">
+
+                      <div class="col-sm-8 text-left workDesc">
+                          <a class="jobEmployer" href="https://gosnappy.io/#/" target="_blank">
+                              Snappy Innovations.
+                          </a>
+                          <div class="jobTitle">
+                              Senior Software Developer (VueJS, Angular, Flutter)
+                          </div>
+                          <div class="JobDate-mobile">
+                            May 2020 - March 2023
+                        </div>
+
+                          <hr>
+
+                          <p>
+                            Taken on the responsibility of leadership over exciting web and native applications built in VueJS, 
+                            AngularJS and Flutter. This role includes creating new or expanding upon several restaurant CRM apps. 
+                            These include making online orders, earning and redeeming punch cards and coupons, and the purchasing of 
+                            store credits and gift cards. I have taken a leadership role in creating the POS application using Flutter 
+                            as well as several sibling applications that work in cooperation with one another in order to build the best 
+                            user experience possible.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="vl">
+              <div class="JobDate">
+                  May 2020 - January 2022
+              </div>
+
+              <span class="dot"></span>
+
+              <div class="card">
+                  <div class="row">
+                      <img class="col-sm-4 nopadding" src="img//jobs//nobal-ion.PNG" alt="Nobal Tech.">
+
+                      <div class="col-sm-8 text-left workDesc">
+                          <a class="jobEmployer" href="https://www.nobal.ca/" target="_blank">
+                              Nobal Technologies. (Consultant)
+                          </a>
+                          <div class="jobTitle">
+                              Full Stack Web Developer (VueJS / Laravel)
+                          </div>
+                          <div class="JobDate-mobile">
+                            May 2020 - January 2022
+                        </div>
+
+                          <hr>
+
+                          <p>
+                              I am continuing my adventure with Nobal Technologies as a contractor in order to build multiple mobile directed VueJs apps. The ION CMS is
+                              a mobile web application designed to help clients get set up with their brand new iMirror, connect their Shopify account and customize their iMirrors theme.
+                              VTO users is another web application used to view and manage the users 3D avatars. I have also continued my work with the CMS.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="vl">
+              <div class="JobDate">
+                  May 2019 - May 2020
+              </div>
+
+              <span class="dot"></span>
+
+              <div class="card">
+                  <div class="row">
+                      <img class="col-sm-4 nopadding" src="img//jobs//iMirror.jpg" alt="Nobal Tech." style="object-fit: cover">
+
+                      <div class="col-sm-8 text-left workDesc">
+                          <a class="jobEmployer" href="https://www.nobal.ca/" target="_blank">
+                              Nobal Technologies.
+                          </a>
+                          <div class="jobTitle">
+                              Full Stack Web Developer (VueJS / Laravel)
+                          </div>
+                          <div class="JobDate-mobile">
+                            May 2019 - May 2020
+                        </div>
+
+                          <hr>
+
+                          <p>
+                              Taken lead on the complete rebuild and redesign of Nobal’s CMS (Content Management System) in order to provide both
+                              developers and clients with the most seamless experience for maintaining and working with Nobal’s iMirror. Working as a
+                              Full Stack software developer on the Web Development team. As early as the second week, tasks included deciding which
+                              frameworks to use and creating complicated abstract systems components for the site to be built off.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="vl">
+              <div class="JobDate">
+                  Sept. 2018 - Dec. 2018
+              </div>
+
+              <span class="dot"></span>
+
+              <div class="card">
+                  <div class="row">
+                      <img class="col-sm-4 nopadding" src="img//jobs//motorla.jpg" alt="Univeristy of Guelph" style="object-fit: cover">
+
+                      <div class="col-sm-8 text-left workDesc">
+                          <a class="jobEmployer" href="https://www.uoguelph.ca/" target="_blank">
+                              Univeristy of Guelph
+                          </a>
+
+                          <div class="jobTitle col-sm-6 nopadding">
+                              Teaching Assistant
+                          </div>
+                          <div class="JobDate-mobile">
+                            Sept. 2018 - Dec. 2018
+                        </div>
+
+                          <hr>
+
+                          <p>
+                              Teaching Assistant for the course CIS 2030:
+                              Structure and Application of Microcomputers. <br>
+                              This experience allowed
+                              me to gain hands on experience, helping to guide younger students
+                              as they take on the next phase of their careers as software
+                              developers working directly with dozens of students at a time in
+                              labs. It also allowed me to deepen my understanding of the
+                              low-level concepts involved in how computers operate.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
           <div class="vl">
             <div class="JobDate">
-                March 2023 - Ongoing.
-            </div>
-
-            <span class="dot"></span>
-
-            <div class="card">
-              <div class="row">
-                  <img class="col-sm-4 nopadding" src="img//jobs//iws.jpg" alt="IWS" style="object-fit: cover">
-
-                  <div class="col-sm-8 text-left workDesc">
-                      <a class="jobEmployer" href="https://www.intelligentwellheadsystems.com" target="_blank">
-                        Intelligent Wellhead Systems.
-                      </a>
-                      <div class="jobTitle">
-                        Senior Front-end developer (VueJS + Laravel)
-                      </div>
-
-                      <hr>
-
-                      <p>
-                        Responsible for the primary web application (both building new and improving existing features). <br>
-                        Creating component libraries for developing consistent UIs easier and faster. <br>
-                        Optimization practices to improve site reliability and performance. <br>
-                        Mentoring Junior developers.
-                      </p>
-                  </div>
-              </div>
-            </div>
-        </div>
-    
-        <div class="vl">
-            <div class="JobDate">
-                August 2021 - December 2022.
-            </div>
-
-            <span class="dot"></span>
-
-            <div class="card">
-              <div class="row">
-                  <img class="col-sm-4 nopadding" src="img//jobs//yoreferee.PNG" alt="Yoreferee" style="object-fit: cover">
-
-                  <div class="col-sm-8 text-left workDesc">
-                      <a class="jobEmployer" href="https://axethrowing.org/watl" target="_blank">
-                          Yoreferee.
-                      </a>
-                      <div class="jobTitle">
-                          Front end developer (VueJS + Firebase)
-                      </div>
-
-                      <hr>
-
-                      <p>
-                          I have taken on a contract with Yoreferee in order to expand on their web applications and resolve a wide 
-                          range of bugs. While I have primarily focused on frontend using VueJS, this has also given me a chance to 
-                          explore Firebase.
-                      </p>
-                  </div>
-              </div>
-            </div>
-        </div>
-
-        <div class="vl">
-            <div class="JobDate">
-                May 2020 - March 2023
+                2007 - Dec. 2018
             </div>
 
             <span class="dot"></span>
 
             <div class="card">
                 <div class="row">
-                    <img class="col-sm-4 nopadding" src="img//jobs//snappy.PNG" alt="Snappy Innovations">
+                    <img class="col-sm-4 nopadding" src="img//jobs//partTime.png" alt="Univeristy of Guelph" style="object-fit: cover">
 
                     <div class="col-sm-8 text-left workDesc">
-                        <a class="jobEmployer" href="https://gosnappy.io/#/" target="_blank">
-                            Snappy Innovations.
-                        </a>
-                        <div class="jobTitle">
-                            Senior Software Developer (VueJS, Angular, Flutter)
-                        </div>
-
-                        <hr>
-
-                        <p>
-                          Taken on the responsibility of leadership over exciting web and native applications built in VueJS, 
-                          AngularJS and Flutter. This role includes creating new or expanding upon several restaurant CRM apps. 
-                          These include making online orders, earning and redeeming punch cards and coupons, and the purchasing of 
-                          store credits and gift cards. I have taken a leadership role in creating the POS application using Flutter 
-                          as well as several sibling applications that work in cooperation with one another in order to build the best 
-                          user experience possible.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="vl">
-            <div class="JobDate">
-                May 2020 - January 2022
-            </div>
-
-            <span class="dot"></span>
-
-            <div class="card">
-                <div class="row">
-                    <img class="col-sm-4 nopadding" src="img//jobs//nobal-ion.PNG" alt="Nobal Tech.">
-
-                    <div class="col-sm-8 text-left workDesc">
-                        <a class="jobEmployer" href="https://www.nobal.ca/" target="_blank">
-                            Nobal Technologies. (Consultant)
-                        </a>
-                        <div class="jobTitle">
-                            Full Stack Web Developer (VueJS / Laravel)
-                        </div>
-
-                        <hr>
-
-                        <p>
-                            I am continuing my adventure with Nobal Technologies as a contractor in order to build multiple mobile directed VueJs apps. The ION CMS is
-                            a mobile web application designed to help clients get set up with their brand new iMirror, connect their Shopify account and customize their iMirrors theme.
-                            VTO users is another web application used to view and manage the users 3D avatars. I have also continued my work with the CMS.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="vl">
-            <div class="JobDate">
-                May 2019 - May 2020
-            </div>
-
-            <span class="dot"></span>
-
-            <div class="card">
-                <div class="row">
-                    <img class="col-sm-4 nopadding" src="img//jobs//iMirror.jpg" alt="Nobal Tech." style="object-fit: cover">
-
-                    <div class="col-sm-8 text-left workDesc">
-                        <a class="jobEmployer" href="https://www.nobal.ca/" target="_blank">
-                            Nobal Technologies.
-                        </a>
-                        <div class="jobTitle">
-                            Full Stack Web Developer (VueJS / Laravel)
-                        </div>
-
-                        <hr>
-
-                        <p>
-                            Taken lead on the complete rebuild and redesign of Nobal’s CMS (Content Management System) in order to provide both
-                            developers and clients with the most seamless experience for maintaining and working with Nobal’s iMirror. Working as a
-                            Full Stack software developer on the Web Development team. As early as the second week, tasks included deciding which
-                            frameworks to use and creating complicated abstract systems components for the site to be built off.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="vl">
-            <div class="JobDate">
-                Sept. 2018 - Dec. 2018
-            </div>
-
-            <span class="dot"></span>
-
-            <div class="card">
-                <div class="row">
-                    <img class="col-sm-4 nopadding" src="img//jobs//motorla.jpg" alt="Univeristy of Guelph" style="object-fit: cover">
-
-                    <div class="col-sm-8 text-left workDesc">
-                        <a class="jobEmployer" href="https://www.uoguelph.ca/" target="_blank">
-                            Univeristy of Guelph
+                        <a class="jobEmployer">
+                            Non Tech.
                         </a>
 
                         <div class="jobTitle col-sm-6 nopadding">
-                            Teaching Assistant
+                            Various Roles
                         </div>
+                        <div class="JobDate-mobile">
+                          2007 - Dec. 2018
+                      </div>
 
                         <hr>
 
                         <p>
-                            Teaching Assistant for the course CIS 2030:
-                            Structure and Application of Microcomputers. <br>
-                            This experience allowed
-                            me to gain hands on experience, helping to guide younger students
-                            as they take on the next phase of their careers as software
-                            developers working directly with dozens of students at a time in
-                            labs. It also allowed me to deepen my understanding of the
-                            low-level concepts involved in how computers operate.
+                            I joined the workforce at a young age, working various non technology related jobs 
+                            (i.e. newspaper delivery, grocery store clerk, retail, landscaping, factory line).
+                            This helped me to develop a strong work ethic and understanding of the working world early on.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="vl">
-          <div class="JobDate">
-              2007 - Dec. 2018
-          </div>
-
-          <span class="dot"></span>
-
-          <div class="card">
-              <div class="row">
-                  <img class="col-sm-4 nopadding" src="img//jobs//partTime.png" alt="Univeristy of Guelph" style="object-fit: cover">
-
-                  <div class="col-sm-8 text-left workDesc">
-                      <a class="jobEmployer">
-                          Non Tech.
-                      </a>
-
-                      <div class="jobTitle col-sm-6 nopadding">
-                          Various Roles
-                      </div>
-
-                      <hr>
-
-                      <p>
-                          I joined the workforce at a young age, working various non technology related jobs 
-                          (i.e. newspaper delivery, grocery store clerk, retail, landscaping, factory line).
-                          This helped me to develop a strong work ethic and understanding of the working world early on.
-                      </p>
-                  </div>
-              </div>
-          </div>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
   <section class="text-center wow fadeInUp" data-wow-delay="0.3s" id="skills">
-    <!-- Skills Title -->
-    <h2>Skills</h2>
+    <div>
+      <!-- Skills Title -->
+      <h2>Skills</h2>
 
-    <!-- Section Body -->
-    <p id="bodySubTitle">
-      Some of the skills I have acquired over my years of programming.
-    </p>
+      <!-- Section Body -->
+      <p id="bodySubTitle">
+        Some of the skills I have acquired over my years of programming.
+      </p>
 
-    <div class="row" id="skillsBody">
-      <!-- Languages Col -->
-      <div class="col-md-3">
-        <i class="fas fa-american-sign-language-interpreting fa-3x red-text"></i>
-        <h3>Languages</h3>
-        <p>
-            HTML, CSS, JavaScript, PHP, <br>
-            C, Java, Python, dart, <br>
-            X68 Assembly, MySQL, PostgreSQL. <br>
-        </p>
-      </div>
+      <div class="row" id="skillsBody">
+        <!-- Languages Col -->
+        <div class="col-md-3">
+          <i class="fas fa-american-sign-language-interpreting fa-3x red-text"></i>
+          <h3>Languages</h3>
+          <p>
+              HTML, CSS, JavaScript, PHP, <br>
+              C, Java, Python, dart, <br>
+              X68 Assembly, MySQL, PostgreSQL. <br>
+          </p>
+        </div>
 
-      <!-- Areas of Focus Col -->
-      <div class="col-md-6">
-        <i class="fas fa-book fa-3x cyan-text"></i>
-        <h3>Areas of Focus</h3>
+        <!-- Areas of Focus Col -->
+        <div class="col-md-6">
+          <i class="fas fa-book fa-3x cyan-text"></i>
+          <h3>Areas of Focus</h3>
 
-        <!-- Areas of focus list -->
-        <div class="row">
-          <!-- Left side of list -->
-          <div class="col-sm-6">
-            <ul class="AofFLeft">
-              <li>UI/UX Design</li>
-              <li>Web Development</li>
-              <li>Regular Expressions</li>
-              <li>Low-Level Engineering</li>
-              <!-- <li>Artificial Intelligence</li> -->
-              <li>O-O Programming</li>
-              <li>MVC paradigm</li>
-              <li>Algorithms</li>
-              <li>Linux</li>
-            </ul>
-          </div>
+          <!-- Areas of focus list -->
+          <div class="row">
+            <!-- Left side of list -->
+            <div class="col-sm-6">
+              <ul class="AofFLeft">
+                <li>UI/UX Design</li>
+                <li>Web Development</li>
+                <li>Regular Expressions</li>
+                <li>Low-Level Engineering</li>
+                <!-- <li>Artificial Intelligence</li> -->
+                <li>O-O Programming</li>
+                <li>MVC paradigm</li>
+                <li>Algorithms</li>
+                <li>Linux</li>
+              </ul>
+            </div>
 
-          <!-- Right side of List -->
-          <div class="col-sm-6">
-            <ul class="AofFRight">
-              <li>SE Practices</li>
-              <li>Webpage Scraping</li>
-              <li>Database Management</li>
-              <li>Android App Development</li>
-              <!-- <li>Machine Learning</li> -->
-              <li>Procedural Programming</li>
-              <li>REST Development</li>
-              <li>Data Structures</li>
-              <li>Windows</li>
-            </ul>
+            <!-- Right side of List -->
+            <div class="col-sm-6">
+              <ul class="AofFRight">
+                <li>SE Practices</li>
+                <li>Webpage Scraping</li>
+                <li>Database Management</li>
+                <li>Android App Development</li>
+                <!-- <li>Machine Learning</li> -->
+                <li>Procedural Programming</li>
+                <li>REST Development</li>
+                <li>Data Structures</li>
+                <li>Windows</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Libraries and Frameworks Col -->
-      <div class="col-md-3">
-        <i class="fas fa-code fa-3x orange-text"></i>
-        <h3>Frameworks and Libraries</h3>
-        <p>
-          VueJS + VueX/Vue-Router/Vuetify, <br>
-          Laravel, Flutter, AngularJS, Angular6, React<br>
-          REST, Material, UIkit, Bootstrap.
-          <!-- JFlex, CUP. -->
-        </p>
+        <!-- Libraries and Frameworks Col -->
+        <div class="col-md-3">
+          <i class="fas fa-code fa-3x orange-text"></i>
+          <h3>Frameworks and Libraries</h3>
+          <p>
+            VueJS + VueX/Vue-Router/Vuetify, <br>
+            Laravel, Flutter, AngularJS, Angular6, React<br>
+            REST, Material, UIkit, Bootstrap.
+            <!-- JFlex, CUP. -->
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Education Section -->
   <section class="row justify-content-center wow fadeInUp" data-wow-delay="0.3s" id="education">
-    <!-- Education Title -->
-    <div class="col-sm-12">
-      <h2>Education</h2>
-    </div>
-
-    <p id="bodySubTitle">
-      All about my education on my way to becoming an experienced programmer.
-    </p>
-
-    <!-- Education Body -->
-    <!-- School Cards -->
-    <div class="row justify-content-around">
-      <!-- Guelph Card -->
-      <div class="col-sm-5 card educationCard text-center p-3 mt-2 mb-3">
-        <blockquote class="blockquote">
-          <h3>University of Guelph</h3>
-          <h6>Bachelor of Computing, Honours Computer Science</h6>
-          <h6>Guelph, Ontario</h6>
-          <p>
-            Obtained Bachelors degree at the University of Guelph in Computer Science in December of 2019. <br><br>
-            <!-- Before my graduation, I completed a wide variety of classes making me a very adaptable programmer. -->
-            Graduated with an honours degree, meaning I achieved at least a 70% average across all CS courses.
-          </p>
-          <br>
-          <br>
-
-          <p id="quote">
-            "You are always a student, never a master. You have to keep moving forward."
-          </p>
-          <footer class="blockquote-footer">
-            <cite title="Source Title">Conrad Hall</cite>
-          </footer>
-        </blockquote>
+    <div>
+      <!-- Education Title -->
+      <div class="col-sm-12">
+        <h2>Education</h2>
       </div>
 
-      <!-- Nelson Card -->
-      <div class="col-sm-5 card educationCard text-center p-3 mt-2 mb-3">
-        <blockquote class="blockquote mb-0">
-          <h3>Nelson High School</h3>
-          <h6>Academic Course Stream</h6>
-          <h6>Burlington, Ontario</h6>
-          <p>
-            Obtained my High School diploma at Nelson High School in Burlington, Ontario in 2015. <br><br>
-            Completed all courses at the Academic level, with an 80% average across all courses.
-            <!-- This is where I began my programming journey, taking 3 years of Computer Science focused on Java. -->
-          </p>
-          <br>
-          <br>
+      <p id="bodySubTitle">
+        All about my education on my way to becoming an experienced programmer.
+      </p>
+
+      <!-- Education Body -->
+      <!-- School Cards -->
+      <div class="row justify-content-around">
+        <!-- Guelph Card -->
+        <div class="col-sm-5 card educationCard text-center p-3 mt-2 mb-3">
+          <blockquote class="blockquote">
+            <h3>University of Guelph</h3>
+            <h6>Bachelor of Computing, Honours Computer Science</h6>
+            <h6>Guelph, Ontario</h6>
+            <p>
+              Obtained Bachelors degree at the University of Guelph in Computer Science in December of 2019. <br><br>
+              <!-- Before my graduation, I completed a wide variety of classes making me a very adaptable programmer. -->
+              Graduated with an honours degree, meaning I achieved at least a 70% average across all CS courses.
+            </p>
+            <br>
+            <br>
+
+            <p id="quote">
+              "You are always a student, never a master. You have to keep moving forward."
+            </p>
+            <footer class="blockquote-footer">
+              <cite title="Source Title">Conrad Hall</cite>
+            </footer>
+          </blockquote>
+        </div>
+
+        <!-- Nelson Card -->
+        <div class="col-sm-5 card educationCard text-center p-3 mt-2 mb-3">
+          <blockquote class="blockquote mb-0">
+            <h3>Nelson High School</h3>
+            <h6>Academic Course Stream</h6>
+            <h6>Burlington, Ontario</h6>
+            <p>
+              Obtained my High School diploma at Nelson High School in Burlington, Ontario in 2015. <br><br>
+              Completed all courses at the Academic level, with an 80% average across all courses.
+              <!-- This is where I began my programming journey, taking 3 years of Computer Science focused on Java. -->
+            </p>
+            <br>
+            <br>
 
 
-          <p id="quote">
-            "The roots of education are bitter, but the fruit is sweet."
-          </p>
-          <footer class="blockquote-footer">
-            <cite title="Source Title">Aristotle</cite>
-          </footer>
-        </blockquote>
+            <p id="quote">
+              "The roots of education are bitter, but the fruit is sweet."
+            </p>
+            <footer class="blockquote-footer">
+              <cite title="Source Title">Aristotle</cite>
+            </footer>
+          </blockquote>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
   <section class="row wow fadeInUp" data-wow-delay="0.3s" id="projects">
-    <!-- Projects title -->
-    <h2 class="col-sm-12">Projects</h2>
+    <div>
+      <!-- Projects title -->
+      <h2 class="col-sm-12">Projects</h2>
 
-    <!-- Projects Body -->
-    <div id="projectsBody">
-      <p id="bodySubTitle">
-        Here's a bunch of my most notable projects pulled dynamically from the Github API!
-      </p>
+      <!-- Projects Body -->
+      <div id="projectsBody">
+        <p id="bodySubTitle">
+          Here's a bunch of my most notable projects pulled dynamically from the Github API!
+        </p>
+      </div>
     </div>
   </section>
 
@@ -894,7 +957,7 @@
         'cipher-chat-react': 'cipher-chat-react'
       }
 
-      var newProject = "<div class='col-lg-5'><div class='view overlay rounded z-depth-2 mb-lg-0 mb-4'><img class='img-fluid' style='min-height: 300px; margin: auto;' src='";
+      var newProject = "<div class='col-sm-12 col-lg-5'><div class='view overlay rounded z-depth-2 mb-lg-0 mb-4'><img class='img-fluid' style='min-height: 300px; margin: auto;' src='";
 
       if (imgMap[projectName])
         newProject += icon + "' alt='Sample image'><a href='" + icon + "' target='_blank'>";
@@ -932,7 +995,7 @@
             if (projectIndex % 2 == 0)
               newProject += buildImageDiv(icon, response[projectIndex].name);
 
-            newProject += "<div class='col-lg-7''><h6 class='" + colours[projectIndex % 3] + "-text font-weight-bold mb-3'>";
+            newProject += "<div class='col-sm-12 col-lg-7'><h6 class='" + colours[projectIndex % 3] + "-text font-weight-bold mb-3'>";
 
             if (response[projectIndex].name.toLowerCase().includes("crawler"))
               newProject += "<i class='fas fa-file-code pr-2'></i>Web Util";
@@ -951,9 +1014,9 @@
             newProject += "</strong></h3>";
 
             if (response[projectIndex].name == "Remindly-V2.0")
-              newProject += "<p>Open Source Android App Development in a team using Agile Software Development practices adding several new features.<br><br>Features Including: <ul><li>Daily Agenda</li><li>Location Services</li><li>Priority Specifications</li><li>Reminder Types</li><li>Sorting</li></ul><br></p>";
+              newProject += "<div class='body-text'>Open Source Android App Development in a team using Agile Software Development practices adding several new features.<br><br>Features Including: <ul><li>Daily Agenda</li><li>Location Services</li><li>Priority Specifications</li><li>Reminder Types</li><li>Sorting</li></ul><br></div>";
             else
-              newProject += "<p>" + response[projectIndex].description + "</p>";
+              newProject += "<div class='body-text'>" + response[projectIndex].description + "</div>";
 
             newProject += "<p>Primary Language: " + response[projectIndex].language + "</p><br><br><br>";
 
