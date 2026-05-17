@@ -1,7 +1,7 @@
 <template>
     <iframe
         style="height: 100vh; width: 100vw; padding: 0vh 20vw"
-        src="/online-resume-v2/resumes/resume.pdf"
+        src="/Neptuniam.github.io/resumes/resume.pdf"
     ></iframe>
 </template>
 

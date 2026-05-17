@@ -43,7 +43,7 @@
                     >
                         <div class="full-width">
                             <img
-                                :src="`/online-resume-v2/jobs/${job.img}`"
+                                :src="`/Neptuniam.github.io/jobs/${job.img}`"
                                 class="float-left"
                             />
 

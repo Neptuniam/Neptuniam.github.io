@@ -1,12 +1,12 @@
 <template>
     <div>
-        <i
+        <span
             id="navbar-activator"
             class="material-icons clickable"
             @click="showNavbar = true"
         >
             density_medium
-        </i>
+        </span>
 
         <div
             id="navbar"
@@ -149,6 +149,7 @@ export default {
     left: 15px;
 
     color: #8b8b8b !important;
+    transition: all 0.2s ease-in-out;
 }
 #navbar-deactivator {
     position: absolute;
@@ -206,7 +207,8 @@ li:hover {
 i {
     transition: all 0.2s ease-in-out;
 }
-i:hover {
-    color: #717171;
+i:hover,
+#navbar-activator:hover {
+    color: #717171 !important;
 }
 </style>

@@ -1,4 +1,4 @@
-# online-resume-v2
+# Neptuniam.github.io
 
 This project serves as an online resume / portfolio for Liam Jones, a passionate software developer
 

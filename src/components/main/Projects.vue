@@ -70,7 +70,7 @@
                         class="col-sm-12 col-md-6 col-3"
                     >
                         <div class="card">
-                            <img :src="`/online-resume-v2/projects/${imgMap[project.name] || 'default'}.PNG`" />
+                            <img :src="`/Neptuniam.github.io/projects/${imgMap[project.name] || 'default'}.PNG`" />
 
                             <div class="project-title-row">
                                 <span class="text-body">
@@ -126,8 +126,8 @@ import axios from 'axios';
 
 const IMG_MAP = {
     'Personal-Homepage': 'Personal-Homepage',
-    'Neptuniam.github.io': 'Neptuniam.github.io',
-    'online-resume-v2': 'online-resume-v2',
+    'ONLINE-RESUME-V1': 'Neptuniam.github.io',
+    'Neptuniam.github.io': 'online-resume-v2',
     'Flight-Checker': 'Flight-Checker',
     'Remindly-V2.0': 'Remindly-V2.0',
     'Generic-Linked-List': 'Generic-Linked-List',

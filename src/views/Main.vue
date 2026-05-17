@@ -146,7 +146,7 @@ export default {
 
     font-size: 50px;
     text-align: center;
-    color: #8b8b8b !important;
+    color: #8b8b8b;
 
     transition: all 0.2s ease-in-out;
 }
